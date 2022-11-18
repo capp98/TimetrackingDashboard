@@ -1,0 +1,262 @@
+:root {
+    --blue-primary: hsl(246, 80%, 60%);
+    --softBlue-primary: hsl(195, 74%, 62%);
+    --lRed-primary: hsl(15, 100%, 70%);
+    --lRed2-primary: hsl(348, 100%, 68%);
+    --limeGreen-primary: hsl(145, 58%, 55%);
+    --violet-primary: hsl(264, 64%, 52%);
+    --softOrange-primary: hsl(43, 84%, 65%);
+
+    --veryDarkBlue-neutral: hsl(226, 43%, 10%);
+    --darkBlue-neutral: hsl(235, 46%, 20%);
+    --desaturatedBlue-neutral: hsl(235, 45%, 61%);
+    --paleBlue-neutral: hsl(236, 100%, 87%);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url("https://fonts.google.com/specimen/Rubik");
+}
+
+* {
+    font-family: Rubik, Arial;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    color: var(--paleBlue-neutral);
+}
+
+main#main {
+    background-color: var(--veryDarkBlue-neutral);
+    height: 100%;
+    width: 100vw;
+    padding: 75px 0;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 55px 0;
+
+    width: 100%;
+}
+
+#cards>div {
+    position: relative;
+    width: 90%;
+    height: 120px;
+    background-color: var(--darkBlue-neutral);
+    text-align: center;
+    z-index: 999;
+
+    border-radius: 10px;
+}
+
+.userCard {
+    margin-bottom: 50px;
+}
+
+.userCard .top {
+    background-color: var(--blue-primary);
+    height: 100%;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.userCard .bot {
+    position: absolute;
+    background-color: var(--darkBlue-neutral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+    height: 40%;
+}
+
+.userCard .bot a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.userCard .userImage {
+    border-radius: 50px;
+    border: 1px solid #fff;
+    width: 80px;
+    height: 80px;
+    background: url(./images/image-jeremy.png) no-repeat 0px 0px;
+    background-size: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+}
+
+.card .top {
+    position: absolute;
+    border-radius: 15px;
+    height: 79px;
+    width: 100%;
+    top: -40px;
+    z-index: 0;
+}
+
+.top#work {
+    background: url(./images/icon-work.svg) var(--lRed-primary) no-repeat 95% -10px;
+}
+
+.top#play {
+    background: url(./images/icon-play.svg) var(--softBlue-primary) no-repeat 95% -8px;
+}
+
+.top#study {
+    background: url(./images/icon-study.svg) var(--lRed2-primary) no-repeat 95% -5px;
+}
+
+.top#exercise {
+    background: url(./images/icon-exercise.svg) var(--limeGreen-primary) no-repeat 95% 0px;
+}
+
+.top#social {
+    background: url(./images/icon-social.svg) var(--violet-primary) no-repeat 95% -10px;
+}
+
+.top#selfCare {
+    background: url(./images/icon-self-care.svg) var(--softOrange-primary) no-repeat 95% -10px;
+}
+
+.card .bot {
+    z-index: 1;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: inherit;
+    height: 100%;
+}
+
+.card>.bot>header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.card>.bot>main>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.card .bot .actual {
+    font-size: 2rem;
+}
+
+
+.card>.bot>header {}
+
+
+/* .card>.bot>header, */
+.card>.bot>main>div {
+    /* z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* 
+<!-- daily -->
+Previous - 7hrs
+<!-- daily -->
+32hrs
+<!-- weekly -->
+Previous - 36hrs
+<!-- weekly -->
+103hrs
+<!-- monthly -->
+Previous - 128hrs
+<!-- monthly -->
+
+Play 1hr
+<!-- daily -->
+Previous - 2hrs
+<!-- daily -->
+10hrs
+<!-- weekly -->
+Previous - 8hrs
+<!-- weekly -->
+23hrs
+<!-- monthly -->
+Previous - 29hrs
+<!-- monthly -->
+
+Study 0hrs
+<!-- daily -->
+Previous - 1hr
+<!-- daily -->
+4hrs
+<!-- weekly -->
+Previous - 7hrs
+<!-- weekly -->
+13hrs
+<!-- monthly -->
+Previous - 19hrs
+<!-- monthly -->
+
+Exercise 1hr
+<!-- daily -->
+Previous - 1hr
+<!-- daily -->
+4hrs
+<!-- weekly -->
+Previous - 5hrs
+<!-- weekly -->
+11hrs
+<!-- monthly -->
+Previous - 18hrs
+<!-- monthly -->
+
+Social 1hr
+<!-- daily -->
+Previous - 3hrs
+<!-- daily -->
+5hrs
+<!-- weekly -->
+Previous - 10hrs
+<!-- weekly -->
+21hrs
+<!-- monthly -->
+Previous - 23hrs
+<!-- monthly -->
+
+Self Care 0hrs
+<!-- daily -->
+Previous - 1hr
+<!-- daily -->
+2hrs
+<!-- weekly -->
+Previous - 2hrs
+<!-- weekly -->
+7hrs
+<!-- monthly -->
+Previous - 11hrs
+<!-- monthly --> */
