@@ -54,9 +54,9 @@ main#main {
     border-radius: 10px;
 }
 
-.userCard {
+#cards>.userCard {
     background-color: var(--darkBlue-neutral);
-    height: 175px !important;
+    height: 175px;
 }
 
 .userCard .top {
@@ -205,5 +205,70 @@ img {
 }
 
 @media (min-width: 749px) {
-    
+body {
+    font-size: 12px;
+}
+
+    #cards {
+        justify-items: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .userCard {
+        grid-row: 1/3;
+        text-align: left;
+    }
+
+    #cards>div {
+        height: 100%;
+    }
+
+    .userCard .top {
+        flex-direction: column;
+    }
+
+    .userCard .userImg {
+        width: 60px;
+        height: 80px;
+    }
+
+    .userCard .top .report {
+        gap: 5px;
+    }
+
+    .userCard .bot {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .userCard .bot a {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    .card>.bot>main>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card>.bot>main>div {
+        align-items: flex-start;
+
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #cards>.userCard {
+        height: 100%;
+    }
+
+    .userCard .top .report {
+        justify-content: space-evenly;
+    }
 }
