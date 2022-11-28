@@ -1,146 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Time tracking dashboard</title>
-  </head>
-  <body>
-    <main id="main">
-      <div id="cards">
-        <div class="userCard">
-          <div class="top">
-            <div class="userImage">
-              <!-- <img src="./images/image-jeremy.png" alt=""> -->
-            </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main id="main">
+    <div id="cards">
+      <div class="userCard">
+
+        <div class="top">
+          <div class="userImg">
+            <!-- <img src="./images/image-jeremy.png" alt="" /> -->
+          </div>
+          <div class="report">
             <p>Report for</p>
             <p>Jeremy Robson</p>
           </div>
-          <div class="bot">
-            <a href="#">Daily</a>
-            <a href="#">Weekly</a>
-            <a href="#">Monthly</a>
-          </div>
         </div>
 
-        <div class="card">
-          <div id="work" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Work</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
-
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+        <div class="bot">
+          <a href="#">Daily</a>
+          <a href="#">Weekly</a>
+          <a href="#">Monthly</a>
         </div>
+      </div>
 
-        <div class="card">
-          <div id="play" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Play</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
+      <div class="card">
+        <div id="work" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Work</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
 
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+          <main>
+            <div class="daily">
+              <p class="actual">32hrs</p>
+              <p class="previously">Last Week - 36hrs</p>
+            </div>
+          </main>
         </div>
+      </div>
 
-        <div class="card">
-          <div id="study" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Study</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
+      <div class="card">
+        <div id="play" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Play</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
 
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+          <main>
+            <div class="daily">
+              <p class="actual">10hrs</p>
+              <p class="previously">Last Week - 8hrs</p>
+            </div>
+          </main>
         </div>
+      </div>
 
-        <div class="card">
-          <div id="exercise" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Exercise</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
+      <div class="card">
+        <div id="study" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Study</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
 
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+          <main>
+            <div class="daily">
+              <p class="actual">4hrs</p>
+              <p class="previously">Last Week - 7hrs</p>
+            </div>
+          </main>
         </div>
+      </div>
 
-        <div class="card">
-          <div id="social" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Social</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
+      <div class="card">
+        <div id="exercise" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Exercise</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
 
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+          <main>
+            <div class="daily">
+              <p class="actual">4hrs</p>
+              <p class="previously">Last Week - 5hrs</p>
+            </div>
+          </main>
         </div>
+      </div>
 
-        <div class="card">
-          <div id="selfCare" class="top"></div>
-          <div class="bot">
-            <header>
-              <h3>Self Care</h3>
-              <img src="images/icon-ellipsis.svg" alt="..." />
-            </header>
+      <div class="card">
+        <div id="social" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Social</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
 
-            <main>
-              <div class="daily">
-                <p class="actual">32hrs</p>
-                <p class="previously">Last Week - 36hrs</p>
-              </div>
-            </main>
-          </div>
+          <main>
+            <div class="daily">
+              <p class="actual">5hrs</p>
+              <p class="previously">Last Week - 10hrs</p>
+            </div>
+          </main>
         </div>
+      </div>
+
+      <div class="card">
+        <div id="selfCare" class="top"></div>
+        <div class="bot">
+          <header>
+            <h3>Self Care</h3>
+            <img src="images/icon-ellipsis.svg" alt="..." />
+          </header>
+
+          <main>
+            <div class="daily">
+              <p class="actual">2hrs</p>
+              <p class="previously">Last Week - 2hrs</p>
+            </div>
+          </main>
+        </div>
+      </div>
 
 
-    <!-- <div class="attribution">
+      <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
-  </body>
+</body>
+
 </html>
